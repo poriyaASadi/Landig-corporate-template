@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+  <div class="Result">
+    <div class="text-result">
+        <div class="text-result-h2">
+            <h2>دسترسی منحصربه فردبه نتایج</h2>
+        </div>
+        <div class="text-result-p">
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+        </div>
+    </div>
+    <div class="container">
+       <div class="row" >
+        <div class="col-6">
+            <div class="box-result">
+                <div class="item-box-result active-box">
+                    <h6 class="text-item-box">حسابرسی جستجوگرها</h6>
+                        <p class="text-p-item-box">طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
+                </div>
+                <div class="item-box-result">
+                    <div class="text-item-box">
+                        <h6>پشتیبانی سریع</h6>
+                    </div>
+                    <div class="text-p-item-box">
+                        <p>طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
+                    </div>
+                </div>
+                <div class="item-box-result">
+                    <div class="text-item-box">
+                        <h6>تکنیک بهترین پیوند</h6>
+                    </div>
+                    <div class="text-p-item-box">
+                        <p>طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6" style="display: flex;justify-content: center;
+        align-items: center;">
+            <div class="img-home">
+                <img class="imges-box"  src="tab1.svg" alt="img-home-1">
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+
+<script>
+  const item_box = $.querySelectorAll('.item-box-result');
+const img = $.querySelector('.imges-box')
+const box_result = $.querySelector('.box-result')
+let img_src = [
+     'tab1.svg',
+     'tab2.svg',
+     'tab3.svg'   
+]
+
+console.log(box_result.children);
+
+let num = 
+
+item_box.forEach(function (x) {
+  x.addEventListener('click' , function () {
+
+    removeActiceClass('active-box');
+    this.classList.add('active-box');
+    img.setAttribute('src' , img_src[num])
+  })
+})
+
+
+function removeActiceClass (className) {
+     document.querySelector(`.${className}`).classList.remove(className);
+  }
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+.main-content{
+    margin-top: 10rem;
+}
+.box-1-blog{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/image1.jpg);
+    object-fit: cover;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    
+}
+.text-box-1{
+ padding-right:1rem;
+ line-height: 1.8rem;
+}
+.h2-box-1{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var( --text-bold-color);
+}
+.p-box-1{
+    color: var(--text-color );
+    font-style: oblique;
+    font-weight: 500;
+
+}
